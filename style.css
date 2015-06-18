@@ -11,7 +11,7 @@ section {
 
 .startBlock {
 	
-	display: none;
+	//display: none;
 	position: absolute;
 	background-image: url("jump.jpg");
 	background-size: 100%;
@@ -53,6 +53,7 @@ section {
 }
 
 .question-block {
+	display: none;
 	background-color: black;
 	position: relative;
 	overflow: auto;
@@ -63,6 +64,7 @@ section {
 	font-size: 25px;
 	text-align: center;
 	border-radius: 10px 10px 10px;
+	background-repeat: no-repeat;
 }
 
 .question-block:before{
@@ -76,7 +78,7 @@ section {
 	left: 0;
 	background-image: url("jordan.jpg");
 	z-index: 1;
-
+	
 }
 
 .question-content {
@@ -87,6 +89,7 @@ section {
 }
 
 .answers-block {
+	display: none;
 	background-color: white;
 	text-align: center;
 	font-size: 30px;
@@ -109,4 +112,17 @@ section {
 
 .answer:hover {
 	background-color: grey;
+}
+
+li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: lightgrey;
+	border-radius: 5px 5px 5px;
+}
+
+ul{
+	position: absolute;
+	left: 37em;
 }
